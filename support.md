@@ -19,6 +19,12 @@ A read-later app where saved articles visit you as sea creatures — for three d
 
 epheでは、記事の滞在期間は3日間です。3日を過ぎた記事は自動的に海へ還ります。これは不具合ではなく、本アプリの中心となる仕組みです。海に還った記事を復元することはできませんが、同じ URL をもう一度保存すれば、また同じ生き物が会いに来てくれます。
 
+### 読んだ記事はあとから見返せますか
+
+はい。読んだ(お話しした)記事は、アプリ内の「航海日誌」に思い出として残ります。どの生き物と、いつ、どんな記事でお話ししたか — タイトル・サイト名・日付をいつでも見返せます。
+
+ただし、航海日誌は出会いの記録であって、記事の保管庫ではありません。本文はもちろんURLも保存していないため、航海日誌から記事を開き直すことはできません。もう一度読みたくなったら、ネットの海でその記事を見つけて、もう一度呼んであげてください。同じ記事には、また同じ生き物が付いてきます。
+
 ### 1日に3件しか保存できないのはなぜですか
 
 「本当に読みたい記事だけを呼ぶ」ためのデザインです。保存できる数は毎朝10時にリセットされます。
@@ -42,6 +48,12 @@ Saved articles arrive as sea creatures the next morning at 10 a.m. Until then, t
 ### My article disappeared
 
 Articles stay for three days, then automatically return to the sea. This is the core concept of the app, not a bug. Departed articles cannot be restored, but saving the same URL again will bring the same creature back.
+
+### Can I look back at articles I've read?
+
+Yes — every article you've read leaves a memory in the in-app "Logbook": the creature, the title, the site, and the date you read it.
+
+The Logbook is a record of encounters, though, not an archive. It stores neither the article's content nor its URL, so you can't reopen an article from there. If you want to read something again, find it out in the sea and call it back — the same creature will come along with it.
 
 ### Why can I only save 3 articles a day?
 
