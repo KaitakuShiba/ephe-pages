@@ -5,7 +5,7 @@
 A read-later app where saved articles visit you as sea creatures — for three days only. Read them or not, they swim back to the sea.
 
 - [プライバシーポリシー / Privacy Policy](./privacy)
-- お問い合わせ / Contact: contact@example.com
+- お問い合わせ / Contact: ephe.app.support@gmail.com
 
 ---
 
