@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ephe — 3日だけの記事プール</title>
-<meta name="description" content="保存した記事が、海の生き物になって遊びに来る「あとで読む」アプリ。滞在は3日だけ。読んでも読まなくても、記事はまたネットの海へ還っていきます。">
-<meta property="og:title" content="ephe — 3日だけの記事プール">
-<meta property="og:description" content="保存した記事が、海の生き物になって遊びに来る「あとで読む」アプリ。滞在は3日だけ。">
+<title>ephe — 記事が3日で消える「あとで読む」アプリ</title>
+<meta name="description" content="「あとで読む」は、いつのまにか「読まない」になっていく。ephe は記事が3日で消える「あとで読む」アプリ。消えるから、今日読む。溜まらないから、重くならない。">
+<meta property="og:title" content="ephe — 記事が3日で消える「あとで読む」アプリ">
+<meta property="og:description" content="消えるから、今日読む。溜まらないから、重くならない。">
 <meta property="og:type" content="website">
 <style>
   :root {
@@ -39,27 +39,25 @@
   }
   main { max-width: 680px; margin: 0 auto; padding: 0 24px 80px; position: relative; }
 
-  .hero { text-align: center; padding: 96px 0 72px; }
-  .hero .creature {
-    font-size: 72px;
-    display: inline-block;
-    animation: bob 3.6s ease-in-out infinite;
+  .hero { padding: 88px 0 64px; }
+  .hero .headline {
+    font-size: 30px; font-weight: 700; line-height: 1.6; letter-spacing: 0.02em;
   }
-  .hero h1 { font-size: 56px; font-weight: 300; letter-spacing: 0.08em; margin-top: 8px; }
-  .hero .tagline { font-size: 20px; margin-top: 6px; opacity: 0.9; }
-  .hero .lead { margin-top: 28px; font-size: 16px; opacity: 0.85; }
+  @media (max-width: 520px) { .hero .headline { font-size: 24px; } }
+  .hero .pain { margin-top: 24px; font-size: 16px; opacity: 0.85; }
+  .hero .solution { margin-top: 28px; font-size: 17px; font-weight: 600; }
+  .hero .appname { font-size: 15px; letter-spacing: 0.15em; opacity: 0.7; margin-bottom: 20px; }
   .hero .store {
-    display: inline-block; margin-top: 36px; padding: 12px 28px;
+    display: inline-block; margin-top: 32px; padding: 12px 28px;
     background: var(--button); color: #fff; border-radius: 999px;
     text-decoration: none; font-size: 15px; letter-spacing: 0.05em;
     box-shadow: 0 6px 20px rgba(10, 40, 80, 0.25);
   }
   @keyframes bob {
-    0%, 100% { transform: translateY(0) rotate(-3deg); }
-    50% { transform: translateY(-14px) rotate(3deg); }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
   }
-
-  .drift { position: absolute; font-size: 26px; opacity: 0.5; animation: bob 5s ease-in-out infinite; pointer-events: none; }
+  .drift { position: absolute; font-size: 22px; opacity: 0.4; animation: bob 5s ease-in-out infinite; pointer-events: none; }
 
   section { margin-top: 72px; }
   h2 { font-size: 22px; font-weight: 600; text-align: center; letter-spacing: 0.1em; margin-bottom: 32px; }
@@ -90,41 +88,43 @@
 </head>
 <body>
 <main>
-  <span class="drift" style="top:140px; left:4%; animation-delay:-1s">🫧</span>
-  <span class="drift" style="top:300px; right:6%; animation-delay:-2.4s">🐟</span>
-  <span class="drift" style="top:560px; left:8%; animation-delay:-0.6s">🐙</span>
-  <span class="drift" style="top:900px; right:10%; animation-delay:-3s">🐢</span>
-  <span class="drift" style="top:1300px; left:5%; animation-delay:-1.8s">🦭</span>
+  <span class="drift" style="top:180px; right:6%; animation-delay:-1s">🫧</span>
+  <span class="drift" style="top:720px; left:5%; animation-delay:-2.6s">🫧</span>
 
   <div class="hero">
-    <span class="creature">🪼</span>
-    <h1>ephe</h1>
-    <p class="tagline">3日だけの記事プール</p>
-    <p class="lead">
-      保存した記事が、海の生き物になって遊びに来る。<br>
-      滞在は3日だけ。読んでも読まなくても、<br>
-      記事はまたネットの海へ還っていきます。
+    <p class="appname">ephe</p>
+    <h1 class="headline">
+      「あとで読む」は、<br>
+      いつのまにか「読まない」になっていく。
+    </h1>
+    <p class="pain">
+      何百件も溜まったリスト、埋もれていく記事、<br>
+      開くたびに少し重くなる気持ち。
+    </p>
+    <p class="solution">
+      ephe は、記事が3日で消える「あとで読む」アプリ。<br>
+      消えるから、今日読む。溜まらないから、重くならない。
     </p>
     <a class="store" href="#">App Store で近日公開</a>
   </div>
 
   <section>
-    <h2>epheの3日間</h2>
+    <h2>なぜ、溜まらないのか</h2>
     <div class="steps">
       <div class="card">
-        <span class="emoji">🫧</span>
-        <h3>呼ぶ — 1日3匹まで</h3>
-        <p>気になった記事を、Safariの共有メニューからワンタップで保存。呼べるのは1日3匹まで。だから、本当に気になった記事だけを呼びます。</p>
+        <span class="emoji">⏳</span>
+        <h3>3日で消える</h3>
+        <p>保存した記事が読めるのは3日間。期限があるから、「いつか」ではなく今日読みます。読めなかった記事は静かに消えるので、リストが重くなることはありません。</p>
       </div>
       <div class="card">
-        <span class="emoji">🐠</span>
-        <h3>会う — 翌朝10時に</h3>
-        <p>記事は翌朝、海の生き物になってやって来ます。URLごとに決まった生き物(全16種類)が、記事を届けてくれます。</p>
+        <span class="emoji">3️⃣</span>
+        <h3>保存は1日3件まで</h3>
+        <p>無限に保存できないから、指が勝手にブックマークすることがなくなります。残るのは、本当に読みたい記事だけ。</p>
       </div>
       <div class="card">
-        <span class="emoji">🌊</span>
-        <h3>見送る — 3日たったら</h3>
-        <p>滞在は3日間。読めなかった記事は、静かに海へ還ります。またいつか海で見つけたら、呼んであげてください。</p>
+        <span class="emoji">🌅</span>
+        <h3>翌朝、まとめて届く</h3>
+        <p>保存した記事は翌朝10時にまとめて到着。通知が「読む時間」の合図になり、読むことが毎朝の小さな習慣になります。</p>
       </div>
     </div>
   </section>
@@ -132,9 +132,9 @@
   <section>
     <h2>機能</h2>
     <div class="features">
-      <div class="card"><span class="emoji">📎</span><h3>共有シートから保存</h3><p>Safariで読んでいる記事を、共有メニューからそのままプールへ。</p></div>
-      <div class="card"><span class="emoji">🔔</span><h3>毎朝10時のお知らせ</h3><p>今日お話しできる記事の数を、そっとお知らせします。</p></div>
-      <div class="card"><span class="emoji">👋</span><h3>いつでも見送れる</h3><p>読み終えた記事は、波のアニメーションとともに海へ。</p></div>
+      <div class="card"><span class="emoji">📎</span><h3>共有シートから保存</h3><p>Safariで読んでいる記事を、共有メニューからワンタップで保存。</p></div>
+      <div class="card"><span class="emoji">🔔</span><h3>毎朝10時のお知らせ</h3><p>今日読める記事の数を、そっとお知らせします。</p></div>
+      <div class="card"><span class="emoji">🐠</span><h3>記事を届ける生き物たち</h3><p>記事はURLごとに決まった海の生き物(全16種類)が届けてくれます。ちょっとした楽しみとして。</p></div>
       <div class="card"><span class="emoji">🌙</span><h3>昼と夜の海</h3><p>ライトモードは昼の海、ダークモードは夜の海。時間とともに表情が変わります。</p></div>
     </div>
   </section>
@@ -150,19 +150,18 @@
   </section>
 
   <section class="en">
-    <h2>ephe — a 3-day article pool</h2>
+    <h2>ephe — read later, gone in 3 days</h2>
     <p>
-      A read-later app where saved articles visit you as sea creatures — for three days only.
-      Read them or not, they swim back to the internet sea.
-      Save up to 3 articles a day from Safari's share sheet; each arrives the next morning as one of 16 sea creatures.
+      Read-later lists only grow — and the longer they get, the less you read.
+      ephe is a read-later app where saved articles disappear after 3 days, so you actually read them.
+      Save up to 3 articles a day from Safari's share sheet; they arrive together the next morning.
       Everything stays on your device: no account, no analytics, no ads.
     </p>
   </section>
 
   <section>
     <p class="quiet">
-      積むための本棚ではなく、3日だけの潮だまりを。<br>
-      海は広いから、大切な記事とはきっとまた出会えます。
+      溜めるためのリストではなく、読むための3日間を。
     </p>
   </section>
 </main>
