@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ephe — 3日だけの記事プール</title>
+<meta name="description" content="保存した記事が、海の生き物になって遊びに来る「あとで読む」アプリ。滞在は3日だけ。読んでも読まなくても、記事はまたネットの海へ還っていきます。">
+<meta property="og:title" content="ephe — 3日だけの記事プール">
+<meta property="og:description" content="保存した記事が、海の生き物になって遊びに来る「あとで読む」アプリ。滞在は3日だけ。">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --surface: #b8dbee;
+    --mid: #80b8db;
+    --deep: #4d85bd;
+    --deeper: #38669e;
+    --ink: #12324f;
+    --card: rgba(255, 255, 255, 0.72);
+    --button: #336aa6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface: #1a2b4d;
+      --mid: #0f1c3b;
+      --deep: #050f26;
+      --deeper: #030a1a;
+      --ink: #dce8f5;
+      --card: rgba(22, 34, 56, 0.78);
+      --button: #477ac0;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(to bottom, var(--surface), var(--mid) 45%, var(--deep) 80%, var(--deeper));
+    line-height: 1.9;
+    overflow-x: hidden;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 0 24px 80px; position: relative; }
+
+  .hero { text-align: center; padding: 96px 0 72px; }
+  .hero .creature {
+    font-size: 72px;
+    display: inline-block;
+    animation: bob 3.6s ease-in-out infinite;
+  }
+  .hero h1 { font-size: 56px; font-weight: 300; letter-spacing: 0.08em; margin-top: 8px; }
+  .hero .tagline { font-size: 20px; margin-top: 6px; opacity: 0.9; }
+  .hero .lead { margin-top: 28px; font-size: 16px; opacity: 0.85; }
+  .hero .store {
+    display: inline-block; margin-top: 36px; padding: 12px 28px;
+    background: var(--button); color: #fff; border-radius: 999px;
+    text-decoration: none; font-size: 15px; letter-spacing: 0.05em;
+    box-shadow: 0 6px 20px rgba(10, 40, 80, 0.25);
+  }
+  @keyframes bob {
+    0%, 100% { transform: translateY(0) rotate(-3deg); }
+    50% { transform: translateY(-14px) rotate(3deg); }
+  }
+
+  .drift { position: absolute; font-size: 26px; opacity: 0.5; animation: bob 5s ease-in-out infinite; pointer-events: none; }
+
+  section { margin-top: 72px; }
+  h2 { font-size: 22px; font-weight: 600; text-align: center; letter-spacing: 0.1em; margin-bottom: 32px; }
+
+  .steps { display: grid; gap: 16px; }
+  .card {
+    background: var(--card); border-radius: 20px; padding: 24px 28px;
+    backdrop-filter: blur(8px);
+  }
+  .card .emoji { font-size: 32px; }
+  .card h3 { font-size: 17px; margin: 6px 0 4px; }
+  .card p { font-size: 14.5px; opacity: 0.85; }
+
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 520px) { .features { grid-template-columns: 1fr; } }
+  .features .card { padding: 20px 22px; }
+
+  .quiet { text-align: center; font-size: 15px; opacity: 0.9; }
+  .quiet .big { font-size: 40px; display: block; margin-bottom: 12px; }
+
+  .en { font-family: system-ui, sans-serif; }
+  .en p { font-size: 14.5px; opacity: 0.85; }
+
+  footer { text-align: center; padding: 48px 24px 64px; font-size: 13.5px; color: rgba(255,255,255,0.85); }
+  footer a { color: inherit; margin: 0 10px; }
+  @media (prefers-color-scheme: light) { footer { color: rgba(255,255,255,0.95); } }
+</style>
+</head>
+<body>
+<main>
+  <span class="drift" style="top:140px; left:4%; animation-delay:-1s">🫧</span>
+  <span class="drift" style="top:300px; right:6%; animation-delay:-2.4s">🐟</span>
+  <span class="drift" style="top:560px; left:8%; animation-delay:-0.6s">🐙</span>
+  <span class="drift" style="top:900px; right:10%; animation-delay:-3s">🐢</span>
+  <span class="drift" style="top:1300px; left:5%; animation-delay:-1.8s">🦭</span>
+
+  <div class="hero">
+    <span class="creature">🪼</span>
+    <h1>ephe</h1>
+    <p class="tagline">3日だけの記事プール</p>
+    <p class="lead">
+      保存した記事が、海の生き物になって遊びに来る。<br>
+      滞在は3日だけ。読んでも読まなくても、<br>
+      記事はまたネットの海へ還っていきます。
+    </p>
+    <a class="store" href="#">App Store で近日公開</a>
+  </div>
+
+  <section>
+    <h2>epheの3日間</h2>
+    <div class="steps">
+      <div class="card">
+        <span class="emoji">🫧</span>
+        <h3>呼ぶ — 1日3匹まで</h3>
+        <p>気になった記事を、Safariの共有メニューからワンタップで保存。呼べるのは1日3匹まで。だから、本当に気になった記事だけを呼びます。</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🐠</span>
+        <h3>会う — 翌朝10時に</h3>
+        <p>記事は翌朝、海の生き物になってやって来ます。URLごとに決まった生き物(全16種類)が、記事を届けてくれます。</p>
+      </div>
+      <div class="card">
+        <span class="emoji">🌊</span>
+        <h3>見送る — 3日たったら</h3>
+        <p>滞在は3日間。読めなかった記事は、静かに海へ還ります。またいつか海で見つけたら、呼んであげてください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>機能</h2>
+    <div class="features">
+      <div class="card"><span class="emoji">📎</span><h3>共有シートから保存</h3><p>Safariで読んでいる記事を、共有メニューからそのままプールへ。</p></div>
+      <div class="card"><span class="emoji">🔔</span><h3>毎朝10時のお知らせ</h3><p>今日お話しできる記事の数を、そっとお知らせします。</p></div>
+      <div class="card"><span class="emoji">👋</span><h3>いつでも見送れる</h3><p>読み終えた記事は、波のアニメーションとともに海へ。</p></div>
+      <div class="card"><span class="emoji">🌙</span><h3>昼と夜の海</h3><p>ライトモードは昼の海、ダークモードは夜の海。時間とともに表情が変わります。</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>プライバシー</h2>
+    <p class="quiet">
+      <span class="big">🐚</span>
+      記事データは、すべて端末の中だけに保存されます。<br>
+      アカウント登録は不要。解析ツールも広告もありません。<br>
+      保存時には、URLのトラッキング用パラメータを自動で取り除きます。
+    </p>
+  </section>
+
+  <section class="en">
+    <h2>ephe — a 3-day article pool</h2>
+    <p>
+      A read-later app where saved articles visit you as sea creatures — for three days only.
+      Read them or not, they swim back to the internet sea.
+      Save up to 3 articles a day from Safari's share sheet; each arrives the next morning as one of 16 sea creatures.
+      Everything stays on your device: no account, no analytics, no ads.
+    </p>
+  </section>
+
+  <section>
+    <p class="quiet">
+      積むための本棚ではなく、3日だけの潮だまりを。<br>
+      海は広いから、大切な記事とはきっとまた出会えます。
+    </p>
+  </section>
+</main>
+
+<footer>
+  <a href="./support">サポート / FAQ</a>
+  <a href="./privacy">プライバシーポリシー</a>
+  <div style="margin-top:12px">© 2026 ephe</div>
+</footer>
+</body>
+</html>
